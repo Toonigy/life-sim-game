@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Avatar</title>
+  <link rel="stylesheet" href="new_game.css">
+</head>
+<body>
+  <div id="avatar-creation">
+    <h1>Create Your Avatar</h1>
+    <form id="avatar-form">
+      <!-- Player Name -->
+      <label for="player-name">Choose Your Name:</label>
+      <select id="preset-names">
+        <option value="random">Generate Random</option>
+        <option value="Alex">Alex</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Taylor">Taylor</option>
+        <option value="Sam">Sam</option>
+        <option value="Jamie">Jamie</option>
+      </select>
+      <input type="text" id="player-name" placeholder="Or Enter Your Own" maxlength="15">
+
+      <!-- Gender Selection -->
+      <label for="gender">Choose Gender:</label>
+      <div id="gender-options">
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+        <label for="nonbinary">Non-binary</label>
+      </div>
+
+      <!-- Avatar Appearance -->
+      <label for="avatar-color">Choose Avatar Color:</label>
+      <input type="color" id="avatar-color" value="#ffcc00">
+
+      <!-- Avatar Traits -->
+      <label for="avatar-hair">Hair Style:</label>
+      <select id="avatar-hair">
+        <option value="short">Short</option>
+        <option value="long">Long</option>
+        <option value="curly">Curly</option>
+        <option value="bald">Bald</option>
+      </select>
+
+      <!-- Submit Button -->
+      <button type="submit">Start Game</button>
+    </form>
+  </div>
+  <script src="new_game.js"></script>
+</body>
+</html>
