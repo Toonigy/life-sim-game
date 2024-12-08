@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Simulation</title>
+  <link rel="stylesheet" href="game_start.css">
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1>Welcome, <span id="player-name">Player</span>!</h1>
+      <p>Age: <span id="player-age">18</span></p>
+    </header>
+    <section id="avatar-display">
+      <div id="avatar" style="background-color: #ffcc00;">👤</div>
+      <p id="avatar-description"></p>
+    </section>
+    <section id="game-actions">
+      <p id="event-description">What would you like to do?</p>
+      <button class="action-btn" id="study-btn">Study</button>
+      <button class="action-btn" id="work-btn">Work</button>
+      <button class="action-btn" id="relax-btn">Relax</button>
+    </section>
+    <footer>
+      <p>Health: <span id="player-health">100</span></p>
+      <p>Money: $<span id="player-money">0</span></p>
+    </footer>
+  </div>
+  <script src="game_start.js"></script>
+</body>
+</html>
